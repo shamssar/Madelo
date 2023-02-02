@@ -1,0 +1,32 @@
+body {
+    background-color:beige;
+}
+#logo {
+    width: 70px;
+    height: 70px;
+}
+
+#top {
+   background-color: orange;
+   padding: 3px;
+   overflow: hidden;
+   font-size: 17px;
+   font-family: Arial, Helvetica, sans-serif;
+justify-content: space-between;
+text-align: center;
+}
+h1 {
+font-family:Georgia, 'Times New Roman', Times, serif;
+font-size: large;
+font-style: italic;
+color:burlywood;
+}
+#top a:hover{
+    background-color: #ddd;
+}
+footer {
+    text-align: center;
+    padding: 3px;
+    background-color: orange;
+    color: black;
+  }
