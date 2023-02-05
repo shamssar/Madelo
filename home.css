@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
+
+:root {
+  --main-color: #d3ad7f;
+  --black: #13131a;
+  --bg: #010103;
+  --border:.1rem solid rgba(255,255,255,.3);
+  --white: #fff;
+  --gray: #ccc;
+}
+
 * {
   font-family: 'Roboto', sans-serif;
   margin: 0;
@@ -53,11 +63,11 @@ a {
   color: var(--main-color);
 }
 header {
-  background-color:orange;
+  background-color:hwb(39 19% 16% / 0.874);
   display: flex;
-  height: 90px;;
   padding: 1.5rem 7%;
-  justify-content: space-between;
+  height: 90px;
+  justify-content:space-between;
   align-items:center;
   font-size: medium;
   position: fixed;
@@ -73,14 +83,16 @@ header {
     color: var(--main-color);
     border-bottom: 0.1rem solid var(--main-color);
     padding-bottom: 0.5rem;
-  }
 
+  
+  }
+  
 
   .home {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background: url(./krists-luhaers-EI50hwMVp28-unsplash.jpg) no-repeat;
+    background: url(./images/krists-luhaers-EI50hwMVp28-unsplash.jpg) no-repeat;
     background-size: cover;
     background-position: center;
     flex-direction: column;
@@ -88,22 +100,25 @@ header {
   }
   .home .content {
     max-width: 60rem;
+  
   }
   
   .home h3 {
     font-size: 6rem;
-    font-weight: 100;
+    font-weight: 400;
+   
+    
     line-height: 1.8;
     padding: 1rem 0;
-    color:whitesmoke;
+    color:white
   }
   
   .home p {
-    font-size: 2rem;
+    font-size: 4rem;
     font-weight: 100;
     line-height: 1.8;
     padding: 1rem 0;
-    color:whitesmoke;
+    color:white;
   }
   
   .about .row {
@@ -141,36 +156,7 @@ header {
 
 
 
-footer {
-    text-align: center;
-    background-color: orange;
-    color: black;
-  }
-  footer .share {
-    padding: 1rem 0
-  }
-  footer .share a {
-    height: 5rem;
-    width: 5rem;
-    line-height: 5rem;
-    font-size: 2rem;
-    border: var(--border);
-    margin: 0.3rem;
-    border-radius: 50%;
-  }
-  
-  footer .share a:hover {
-    background-color: var(--main-color);
-  }
-  footer .reserve {
-    font-size: 2rem;
-    font-weight: 300;
-    padding: 1.5rem;
-  }
-  
-  footer .reserve span {
-    color: var(--main-color);
-  }
+
   
   .menu .box-container {
     display: grid;
@@ -259,6 +245,35 @@ footer {
     background: none;
     color: var(--white);
   }
+
+  footer {
+    text-align: center;
+    background-color:hwb(39 19% 16% / 0.874);
+  
+    
+  }
+  footer .share {
+    padding: 1rem 0
+  }
+  footer .share a {
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    border: var(--border);
+    margin: 0.3rem;
+    border-radius: 50%;
+  }
+  
+  footer .share a:hover {
+    background-color: var(--main-color);
+  }
+  footer .reserve {
+    font-size: 2rem;
+    font-weight: 300;
+    padding: 1.5rem;
+  }
+  
 
 
   @media (max-width: 991px) {
